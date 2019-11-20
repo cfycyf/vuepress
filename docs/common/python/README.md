@@ -1,5 +1,7 @@
 ---
 home: true
+heroText: ' '
+tagline: 'python python python'
 ---
 
 - [python基本数据类型整理](/common/python/listTupleDictSet.html)

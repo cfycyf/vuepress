@@ -1,5 +1,7 @@
 ---
-title: C语言
+home: true
+heroText: ' '
+tagline: 'c语言纪要'
 ---
 
 - [进程间通信](/common/c/IPCInterProcessCommunication/IPCInterProcessCommunication.html)
