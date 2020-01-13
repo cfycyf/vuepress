@@ -19,6 +19,8 @@ awk -F "," '{print $1}' #以","分割
 git status | grep modified: | cut -d: -f2 | xargs git add
 git reflog -> git reset <id> #可以回到rest之前的位置
 git feth -> git rebase <branch>
+git branch -r --contains commitid  #查看commit id在哪个branch
+git archive-format=tar --prefix=Orbi-Outdoor-V2.1.2.6_gpl_src/ HEAD | bzip2 -z >Orbi-Outdoor-V2.1.2.6_gpl_src.tar.bz2 #git compress
 ```
 ## vim
 ```shell
