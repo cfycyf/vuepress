@@ -35,6 +35,9 @@ cat /proc/sys/net/ath21/status #查看是否是AP
 config set config_timestamp=1574163363 # a diff times_stamp
 config set soap_setting=AllConfig #soap group
 killall -SIGUSR1 soap_agent
+# 查看AllConfig是否做完的一个依据
+cat /tmp/soapclient/soap_auth_mac
+BC:A5:11:BA:68:F6= 0 完成， 1 未完成
 ```
 ## 6.查看scan result wpa_cli
 ```shell
