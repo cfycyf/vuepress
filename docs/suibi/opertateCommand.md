@@ -137,6 +137,12 @@ char *ether_etoa(uint8 *e, char *a)
 		a[k++] = hexbuf[(e[i]) & 0xF];
 }
 ```
+## 14. curl 在Base console 发soap
+```shell
+curl -k -H "Content-Type:text/xml" -H "SOAPAction:urn:NETGEAR-ROUTER:service:DeviceInfo:1#GetAllSatellites" -d '<?xml version="1.0" encoding="UTF-8" standalone="no" ?> <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"> <SOAP-ENV:Header> <SessionID>99999999999999999997</SessionID>  </SOAP-ENV:Header> <SOAP-ENV:Body> </SOAP-ENV:Body></SOAP-ENV:Envelope>' http://127.0.0.1:80/soap/server_sa/
+
+# ip 127.0.0.1是最近加入的，一般可以使用br0 ip
+```
 
 
 
